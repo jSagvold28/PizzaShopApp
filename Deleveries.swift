@@ -29,7 +29,7 @@ struct Delevires: View {
         VStack {
             
             
-            Text("Delevry Order")
+            Text("Delivery Order")
                 .font(.title)
                 .padding(.top, 15)
                 .bold()
@@ -70,7 +70,7 @@ struct Delevires: View {
             TextField("Phone Number dont use dashes!", text: $PhoneNumber)
                 .padding(.horizontal, 15)
                 .foregroundColor(.black)
-                .padding(.bottom, 15)
+                .padding(.bottom, 25)
             
             
             
