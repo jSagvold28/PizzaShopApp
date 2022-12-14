@@ -12,28 +12,31 @@ struct ContentView: View {
         
         NavigationView {
             
-            List {
+            VStack {
                 
-                NavigationLink {
-                    PizzaView()
-                } label: {
-                    Text("Our Pizzas")
+                List {
+                    
+                    NavigationLink {
+                        PizzaView()
+                    } label: {
+                        Text("Our Pizzas")
+                    }
+                    
+                    NavigationLink {
+                        Beverages()
+                    } label: {
+                        Text("Beverages")
+                    }
+                    
+                    NavigationLink {
+                        Delevires()
+                    } label: {
+                        Text("Delivery")
+                    }
+                    
                 }
-                
-                NavigationLink {
-                    Beverages()
-                } label: {
-                    Text("Beverages")
-                }
-                
-                NavigationLink {
-                    Delevires()
-                } label: {
-                    Text("Delivery")
-                }
-                
+                .navigationTitle("Items")
             }
-            .navigationTitle("Items")
         }
     }
 }
