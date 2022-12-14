@@ -29,6 +29,14 @@ struct BasicPIzzas: View {
                 Image("pizza4")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                
+                Image("pizza10")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                
+                Text("NEW RELEASE: New York Pizza")
+                    .bold()
+                    .font(.title3)
             }
         }
     }
