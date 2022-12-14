@@ -67,10 +67,10 @@ struct Delevires: View {
                 .foregroundColor(.gray)
                 .padding(.bottom)
             
-            TextField("Phone Number", text: $PhoneNumber)
+            TextField("Phone Number dont use dashes!", text: $PhoneNumber)
                 .padding(.horizontal, 15)
                 .foregroundColor(.black)
-                .padding(.bottom)
+                .padding(.bottom, 15)
             
             
             
@@ -85,25 +85,20 @@ struct Delevires: View {
             
 
             
-            Link("Confrim Order", destination: URL(string: "https://docs.google.com/document/d/1bNtkSemB_A_HjD4ld_irefiFLvWFNPIVDAFbQuANRyY/edit?usp=sharing")!)
-                .font(.title3)
-                .bold()
-                .padding(.all)
-                .background(.green)
-                .cornerRadius(30)
-                .foregroundColor(.black)
-                .shadow(radius: 12.65)
-                .blur(radius: 0.00000078)
-                .padding(.bottom, 15)
-                //.foregroundColor("ButtonTextColor")
-            
-            
-            
-            
-            
-            
-
-            
+            VStack {
+                Link("Confrim Order", destination: URL(string: "https://docs.google.com/document/d/1bNtkSemB_A_HjD4ld_irefiFLvWFNPIVDAFbQuANRyY/edit?usp=sharing")!)
+                    .font(.title3)
+                    .bold()
+                    .padding(.all)
+                    .background(.green)
+                    .cornerRadius(16)
+                    .foregroundColor(.black)
+                    .shadow(radius: 12.65)
+                    .blur(radius: 0.00000078)
+                    .padding(.bottom, 15)
+                
+                Text("By pressing confirm order you agree to. Being charged for the amount due.")
+            }
             
             
             Spacer()
